@@ -11,3 +11,54 @@
         <?php wp_head(); ?>
     </head>
     <body>
+        <header>
+            <a href="#" class="logo">Kapioto</a>
+            
+            <div class="menubar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Reviews</a>
+                </li>
+                <li>
+                    <a href="#">Pricing</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="actions">
+                <li>
+                    <a href="tel:+44987065908">+44 987 065 908</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="<?= get_bloginfo('template_directory')?>/dist/img/facebook.png" alt="facebook"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="<?= get_bloginfo('template_directory')?>/dist/img/twitter.png" alt="twitter"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="<?= get_bloginfo('template_directory')?>/dist/img/instagram.png" alt="instagram"/>
+                    </a>
+                </li>
+            </ul>
+        </header>

@@ -56,7 +56,8 @@ function kapioto_scripts() {
 	wp_enqueue_style( 'kapioto-style', get_stylesheet_uri() );
     wp_enqueue_style( 'kapioto-main-style', get_template_directory_uri() . '/dist/css/style.css', array(), null );
     
-	wp_enqueue_script( 'kapioto-main-js', get_template_directory_uri() . '/dist/js/main.js', array(), null, true );
+	wp_enqueue_script( 'kapioto-jquery-js', get_template_directory_uri() . '/src/js/jquery.js', array(), null, true );
+	wp_enqueue_script( 'kapioto-main-js', get_template_directory_uri() . '/src/js/main.js', array(), null, true );
 }
 
 add_action( 'wp_enqueue_scripts', 'kapioto_scripts' );
