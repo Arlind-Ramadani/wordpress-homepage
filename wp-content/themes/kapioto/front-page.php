@@ -71,4 +71,19 @@ get_header();
     </div>
 </div>
 
+<div class="strategies-container">
+    <div class="strategies-item">
+        <h4><b>01.</b> Discussion</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto aspernatur sapiente vitae rerum sequi reprehenderit!</p>
+    </div>
+    <div class="strategies-item">
+        <h4><b>02.</b> Development</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto aspernatur sapiente vitae rerum sequi reprehenderit!</p>
+    </div>
+    <div class="strategies-item">
+        <h4><b>03.</b> Release Project</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto aspernatur sapiente vitae rerum sequi reprehenderit!</p>
+    </div>
+</div>
+
 <?php get_footer(); ?>

@@ -186,3 +186,29 @@
         }
     }
 }
+
+.strategies-container {
+    display: flex;
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+    }
+
+    .strategies-item {
+        background-color: $blue;
+        color: $white;
+        padding: 70px 50px;
+
+        &:nth-child(2) {
+            background-color: $red;
+        }
+        &:nth-child(3) {
+            background-color: $light-blue;
+        }
+
+        h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    }
+}
