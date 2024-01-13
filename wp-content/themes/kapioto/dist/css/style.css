@@ -45,4 +45,8 @@ body.overflow-hidden {
   overflow: hidden;
 }
 
+body {
+  font-family: "Open Sans";
+}
+
 /*# sourceMappingURL=style.css.map */
