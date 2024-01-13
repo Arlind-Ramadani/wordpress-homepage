@@ -240,11 +240,6 @@ header .menubar span {
     flex-direction: column;
   }
 }
-@media (min-width: 992px) {
-  .banner-container .banner-wrapper > div {
-    max-width: calc(50% - 15px);
-  }
-}
 .banner-container .banner-wrapper h3 {
   font-size: 18px;
   font-weight: 500;
@@ -265,6 +260,7 @@ header .menubar span {
 @media (min-width: 992px) {
   .banner-container .banner-wrapper p {
     font-size: 18px;
+    line-height: 1.6;
   }
 }
 .banner-container .banner-wrapper .actions-wrapper {
@@ -279,10 +275,20 @@ header .menubar span {
 .banner-container .banner-wrapper .actions-wrapper .btn-primary {
   margin-right: 30px;
 }
+@media (min-width: 992px) {
+  .banner-container .banner-wrapper .content {
+    max-width: calc(60% - 15px);
+  }
+}
 .banner-container .banner-wrapper .image-wrapper {
   width: 50%;
   position: relative;
   min-height: 300px;
+}
+@media (min-width: 992px) {
+  .banner-container .banner-wrapper .image-wrapper {
+    max-width: calc(40% - 15px);
+  }
 }
 @media (max-width: 992px) {
   .banner-container .banner-wrapper .image-wrapper {
@@ -312,6 +318,45 @@ header .menubar span {
   border-bottom: 20px solid transparent;
   border-left: 30px solid #ffffff;
   margin-left: 30px;
+}
+
+.experience-container {
+  padding: 80px 15px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .experience-container {
+    padding: 100px 0;
+  }
+}
+.experience-container .title {
+  font-size: 26px;
+  line-height: 1.6;
+  max-width: 580px;
+  margin: 0 auto 60px;
+  font-weight: 300;
+}
+.experience-container .experience-wrapper {
+  display: flex;
+  gap: 40px;
+}
+@media (max-width: 992px) {
+  .experience-container .experience-wrapper {
+    flex-direction: column;
+  }
+}
+.experience-container .experience-wrapper .experience-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+.experience-container .experience-wrapper .experience-item h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.experience-container .experience-wrapper .experience-item p {
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
