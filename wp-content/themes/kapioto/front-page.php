@@ -58,4 +58,17 @@ get_header();
 </div>
 
 
+<div class="mission-container">
+    <div class="image-wrapper">
+        
+    </div>
+    <div class="content">
+        <h4>Our Mission</h4>
+        <p>We use an agile approach to test assumptions and connect with the needs of vour audience early and often. technology enables great experiences. We like and use technology but we have tried</p>
+        <p>Clever use of technology and lean processes enable us to wor faster and smarter.</p>
+
+        <img src="<?= get_bloginfo('template_directory')?>/dist/img/signature.png" alt="">
+    </div>
+</div>
+
 <?php get_footer(); ?>

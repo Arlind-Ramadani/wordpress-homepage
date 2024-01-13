@@ -359,4 +359,45 @@ header .menubar span {
   font-weight: 300;
 }
 
+.mission-container {
+  display: flex;
+}
+@media (max-width: 992px) {
+  .mission-container {
+    flex-direction: column-reverse;
+  }
+}
+.mission-container .image-wrapper {
+  background-color: #696969;
+  width: 50%;
+  min-height: 300px;
+}
+@media (max-width: 992px) {
+  .mission-container .image-wrapper {
+    width: 100%;
+  }
+}
+.mission-container .content {
+  width: 50%;
+  background-color: #0a1c58;
+  color: #ffffff;
+  padding: 100px 120px 100px 80px;
+}
+@media (max-width: 992px) {
+  .mission-container .content {
+    width: 100%;
+    padding: 50px 15px;
+  }
+}
+.mission-container .content h4 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.mission-container .content p {
+  margin-bottom: 16px;
+}
+.mission-container .content img {
+  height: 80px;
+}
+
 /*# sourceMappingURL=style.css.map */
