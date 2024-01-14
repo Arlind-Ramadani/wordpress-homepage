@@ -9,10 +9,10 @@ get_header();
     <div class="container">
         <div class="banner-wrapper">
             <div class="content">
-                <h3>Business theme</h3>
-                <h2>We Grow Up your Business</h2>
+                <h3><?= ( get_field('banner')['subtitle'] );?></h3>
+                <h2><?= ( get_field('banner')['title'] );?></h2>
 
-                <p>We are a new Digital Agency based in USA. We have over 10 years of combined experience, and know a thing or two about designing websites and mobile apps.</p>
+                <p><?= ( get_field('banner')['text'] );?></p>
 
                 <div class="actions-wrapper">
                     <a href="#" class="btn btn-primary">Get in touch</a>
@@ -31,26 +31,26 @@ get_header();
 
 <div class="experience-container">
     <div class="container">
-        <p class="title">Over 10 years of combined experience, and know a thing or two about designing websites and mobile apps.</p>
+        <?= ( get_field('experience')['title'] );?>
 
         <div class="experience-wrapper">
             <div class="experience-item">
                 <img src="<?= get_bloginfo('template_directory')?>/dist/img/bow.png" alt="">
 
-                <h4>Web Development</h4>
-                <p>Web development is a broad term for the work involved in developing a web site for the Internet.</p>
+                <h4><?= ( get_field('experience')['title_1'] );?></h4>
+                <p><?= ( get_field('experience')['text_1'] );?></p>
             </div>
             <div class="experience-item">
                 <img src="<?= get_bloginfo('template_directory')?>/dist/img/diamond.png" alt="">
 
-                <h4>Web & UI/UX Design</h4>
-                <p>Web design encompasses many different skills and disciplines in the production and maintenance of all web.</p>
+                <h4><?= ( get_field('experience')['title_2'] );?></h4>
+                <p><?= ( get_field('experience')['text_2'] );?></p>
             </div>
             <div class="experience-item">
                 <img src="<?= get_bloginfo('template_directory')?>/dist/img/briefcase.png" alt="">
 
-                <h4>SEO & Marketing</h4>
-                <p>A process of affecting the visibility of a website or a web page in a web search enrine's unpaid results.</p>
+                <h4><?= ( get_field('experience')['title_3'] );?></h4>
+                <p><?= ( get_field('experience')['text_3'] );?></p>
             </div>
         </div>
     </div>
@@ -61,9 +61,8 @@ get_header();
         
     </div>
     <div class="content">
-        <h4>Our Mission</h4>
-        <p>We use an agile approach to test assumptions and connect with the needs of vour audience early and often. technology enables great experiences. We like and use technology but we have tried</p>
-        <p>Clever use of technology and lean processes enable us to wor faster and smarter.</p>
+        <h4><?= ( get_field('mission')['title'] );?></h4>
+        <?= ( get_field('mission')['text'] );?>
 
         <img src="<?= get_bloginfo('template_directory')?>/dist/img/signature.png" alt="">
     </div>
@@ -71,56 +70,55 @@ get_header();
 
 <div class="strategies-container">
     <div class="strategies-item">
-        <h4><b>01.</b> Discussion</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto aspernatur sapiente vitae rerum sequi reprehenderit!</p>
+        <h4><?= ( get_field('strategies')['title_1'] );?></h4>
+        <?= ( get_field('strategies')['text_1'] );?>
     </div>
     <div class="strategies-item">
-        <h4><b>02.</b> Development</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto aspernatur sapiente vitae rerum sequi reprehenderit!</p>
+        <h4><?= ( get_field('strategies')['title_2'] );?></h4>
+        <?= ( get_field('strategies')['text_2'] );?>
     </div>
     <div class="strategies-item">
-        <h4><b>03.</b> Release Project</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto aspernatur sapiente vitae rerum sequi reprehenderit!</p>
+        <h4><?= ( get_field('strategies')['title_3'] );?></h4>
+        <?= ( get_field('strategies')['text_3'] );?>
     </div>
 </div>
 
 <div class="facts-container">
     <div class="container">
-        <h4>Some Facts about us</h4>
-
-        <p>Vivamus ut scelerisque tellus. Morbi egestas neque et lorem sodales faucibus. Etiam efficitur vehicula commodo. Curabitur ac libero ullamcorper, interdum arcu et, posuere arcu.</p>
+        <h4><?= ( get_field('facts')['title'] );?></h4>
+        <?= ( get_field('facts')['text'] );?>
 
         <div class="facts-wrapper">
             <div class="facts-item">
                 <img src="<?= get_bloginfo('template_directory')?>/dist/img/briefcase.png" alt="">
 
                 <div class="content">
-                    <p class="number">548</p>
-                    <p>Projects completed</p>
+                    <p class="number"><?= ( get_field('facts')['fact_no_1'] );?></p>
+                    <p><?= ( get_field('facts')['fact_text_1'] );?></p>
                 </div>
             </div>
             <div class="facts-item">
                 <img src="<?= get_bloginfo('template_directory')?>/dist/img/clock.png" alt="">
 
                 <div class="content">
-                    <p class="number">1465</p>
-                    <p>Working Hours</p>
+                    <p class="number"><?= ( get_field('facts')['fact_no_2'] );?></p>
+                    <p><?= ( get_field('facts')['fact_text_2'] );?></p>
                 </div>
             </div>
             <div class="facts-item">
                 <img src="<?= get_bloginfo('template_directory')?>/dist/img/star.png" alt="">
 
                 <div class="content">
-                    <p class="number">612</p>
-                    <p>Positive Feedbacks</p>
+                    <p class="number"><?= ( get_field('facts')['fact_no_3'] );?></p>
+                    <p><?= ( get_field('facts')['fact_text_3'] );?></p>
                 </div>
             </div>
             <div class="facts-item">
                 <img src="<?= get_bloginfo('template_directory')?>/dist/img/heart.png" alt="">
 
                 <div class="content">
-                    <p class="number">735</p>
-                    <p>Happy clients</p>
+                    <p class="number"><?= ( get_field('facts')['fact_no_4'] );?></p>
+                    <p><?= ( get_field('facts')['fact_text_4'] );?></p>
                 </div>
             </div>
         </div>
@@ -130,9 +128,9 @@ get_header();
 <div class="contact-container">
     <div class="container">
         <div class="content">
-            <h5>Want to work with us?</h5>
+            <h5><?= ( get_field('contact')['title'] );?></h5>
 
-            <p>If you have any questions ~ please contact us via the Contact Form</p>
+            <p><?= ( get_field('contact')['text'] );?></p>
         </div>
         <a href="#" class="btn btn-primary">Get in touch</a>
     </div>
@@ -142,17 +140,11 @@ get_header();
     <div class="container">
         <div class="industries-wrapper">
             <div class="content">
-                <h4>Our main Industries</h4>
+                <h4><?= ( get_field('industries')['title'] );?></h4>
 
-                <p>An award-winning design and development team that is proud of our work.</p>
+                <p><?= ( get_field('industries')['text'] );?></p>
 
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                </ul>
+                <?= ( get_field('industries')['list'] );?>
             </div>
             <div class="slider">
                 <div></div>
