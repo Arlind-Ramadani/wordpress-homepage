@@ -29,7 +29,6 @@ get_header();
     </div>
 </div>
 
-
 <div class="experience-container">
     <div class="container">
         <p class="title">Over 10 years of combined experience, and know a thing or two about designing websites and mobile apps.</p>
@@ -56,7 +55,6 @@ get_header();
         </div>
     </div>
 </div>
-
 
 <div class="mission-container">
     <div class="image-wrapper">
@@ -124,6 +122,41 @@ get_header();
                     <p class="number">735</p>
                     <p>Happy clients</p>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact-container">
+    <div class="container">
+        <div class="content">
+            <h5>Want to work with us?</h5>
+
+            <p>If you have any questions ~ please contact us via the Contact Form</p>
+        </div>
+        <a href="#" class="btn btn-primary">Get in touch</a>
+    </div>
+</div>
+
+<div class="industries-container">
+    <div class="container">
+        <div class="industries-wrapper">
+            <div class="content">
+                <h4>Our main Industries</h4>
+
+                <p>An award-winning design and development team that is proud of our work.</p>
+
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                </ul>
+            </div>
+            <div class="slider">
+                <div></div>
+                <div></div>
             </div>
         </div>
     </div>

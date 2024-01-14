@@ -270,3 +270,93 @@
         }
     }
 }
+
+.contact-container {
+    background-color: $blue;
+    padding: 50px 0;
+    color: $white;
+
+    @media (max-width: 992px) {
+        padding: 50px 15px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        h5 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            @media (max-width: 992px) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.industries-container {
+    padding: 60px 15px;
+
+    @media (min-width: 992px) {
+        padding: 100px 0;
+    }
+
+    .industries-wrapper {
+        display: flex;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+    }
+
+    h4 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    ul li {
+        margin-bottom: 15px;
+        list-style-type: circle;
+        margin-left: 20px;
+    }
+
+    .content {
+        flex: 1;
+        margin-bottom: 30px;
+
+        @media (min-width: 992px) {
+            margin-right: 80px;
+            margin-bottom: 0;
+        }
+    }
+
+    .slider {
+        display: flex;
+        flex-basis: 50%;
+        gap: 20px;
+
+        @media (min-width: 992px) {
+            gap: 40px;
+        }
+
+        div {
+            width: calc(50% - 10px);
+
+            @media (min-width: 992px) {
+                width: calc(50% - 20px);
+            }
+            min-height: 200px;
+            background-color: $dark-gray;
+        }
+    }
+}
