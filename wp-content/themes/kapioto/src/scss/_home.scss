@@ -212,3 +212,61 @@
         }
     }
 }
+
+.facts-container {
+    padding: 80px 15px;
+    text-align: center;
+
+    @media (min-width: 992px) {
+        padding: 100px 0;
+    }
+
+    h4 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        max-width: 600px;
+        margin: auto;
+        color: $gray;
+    }
+
+    img {
+        width: 40px;
+        object-fit: contain;
+        object-position: top;
+    }
+
+    .facts-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .facts-item {
+            display: flex;
+            gap: 20px;
+
+            @media (max-width: 992px) {
+                width: calc(50% - 10px);
+            }
+
+            p {
+                margin: 0;
+                color: $black;
+                text-align: left;
+
+                &.number {
+                    font-size: 32px;
+                    font-weight: 300;
+                    color: $blue;
+                }
+            }
+        }
+    }
+}

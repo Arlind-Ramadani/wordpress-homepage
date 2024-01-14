@@ -86,4 +86,47 @@ get_header();
     </div>
 </div>
 
+<div class="facts-container">
+    <div class="container">
+        <h4>Some Facts about us</h4>
+
+        <p>Vivamus ut scelerisque tellus. Morbi egestas neque et lorem sodales faucibus. Etiam efficitur vehicula commodo. Curabitur ac libero ullamcorper, interdum arcu et, posuere arcu.</p>
+
+        <div class="facts-wrapper">
+            <div class="facts-item">
+                <img src="<?= get_bloginfo('template_directory')?>/dist/img/briefcase.png" alt="">
+
+                <div class="content">
+                    <p class="number">548</p>
+                    <p>Projects completed</p>
+                </div>
+            </div>
+            <div class="facts-item">
+                <img src="<?= get_bloginfo('template_directory')?>/dist/img/clock.png" alt="">
+
+                <div class="content">
+                    <p class="number">1465</p>
+                    <p>Working Hours</p>
+                </div>
+            </div>
+            <div class="facts-item">
+                <img src="<?= get_bloginfo('template_directory')?>/dist/img/star.png" alt="">
+
+                <div class="content">
+                    <p class="number">612</p>
+                    <p>Positive Feedbacks</p>
+                </div>
+            </div>
+            <div class="facts-item">
+                <img src="<?= get_bloginfo('template_directory')?>/dist/img/heart.png" alt="">
+
+                <div class="content">
+                    <p class="number">735</p>
+                    <p>Happy clients</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php get_footer(); ?>

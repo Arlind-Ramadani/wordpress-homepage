@@ -424,4 +424,58 @@ header .menubar span {
   margin-bottom: 10px;
 }
 
+.facts-container {
+  padding: 80px 15px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .facts-container {
+    padding: 100px 0;
+  }
+}
+.facts-container h4 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.facts-container p {
+  max-width: 600px;
+  margin: auto;
+  color: #696969;
+}
+.facts-container img {
+  width: 40px;
+  object-fit: contain;
+  object-position: top;
+}
+.facts-container .facts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+@media (max-width: 992px) {
+  .facts-container .facts-wrapper {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+.facts-container .facts-wrapper .facts-item {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .facts-container .facts-wrapper .facts-item {
+    width: calc(50% - 10px);
+  }
+}
+.facts-container .facts-wrapper .facts-item p {
+  margin: 0;
+  color: #0f0f0e;
+  text-align: left;
+}
+.facts-container .facts-wrapper .facts-item p.number {
+  font-size: 32px;
+  font-weight: 300;
+  color: #0a1c58;
+}
+
 /*# sourceMappingURL=style.css.map */
